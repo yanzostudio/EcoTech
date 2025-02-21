@@ -1,0 +1,332 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 3, 2025, 12:54:46 AM
+    Author     : TUF F15
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b263b;
+    margin: 0;
+    color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #102a43;
+    color: #f4f4f4;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.sidebar {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #102a43;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: #f4f4f4;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #1b263b;
+    cursor: pointer;
+}
+
+.sidebar a:hover {
+    background-color: #243b55;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #243b55;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #4fc3f7;
+    margin-bottom: 10px;
+}
+
+canvas {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #243b55;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #102a43;
+    color: #f4f4f4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+/* Sidebar active link */
+.sidebar a.active {
+    background-color: #243b55;
+    font-weight: bold;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #f4f4f4;
+}
+
+table th, table td {
+    border: 1px solid #4fc3f7;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #102a43;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+table td {
+    background-color: #243b55;
+    font-size: 13px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-edit {
+    background-color: #4fc3f7;
+    color: #102a43;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    opacity: 0.9;
+}
+
+/* Card styling */
+.card {
+    background-color: #243b55;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #4fc3f7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+/* Sidebar active link */
+.sidebar a.active {
+    background-color: #243b55;
+    font-weight: bold;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #f4f4f4;
+}
+
+table th, table td {
+    border: 1px solid #4fc3f7;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #102a43;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+table td {
+    background-color: #243b55;
+    font-size: 13px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-edit {
+    background-color: #4fc3f7;
+    color: #102a43;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    opacity: 0.9;
+}
+
+/* Card styling */
+.card {
+    background-color: #243b55;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #4fc3f7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Canvas styling */
+canvas {
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+/* Sidebar active link */
+.sidebar a.active {
+    background-color: #243b55;
+    font-weight: bold;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #f4f4f4;
+}
+
+table th, table td {
+    border: 1px solid #4fc3f7;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #102a43;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+table td {
+    background-color: #243b55;
+    font-size: 13px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+    background-color: #243b55;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #243b55;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4fc3f7;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4fc3f7;
+}
+
+/* Card styling */
+.card {
+    background-color: #243b55;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #4fc3f7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+/* Ensure the body and html allow scrolling */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #1b263b; /* Maintain the background color */
+}
+
+/* Main content container adjustments */
+.main-content {
+    padding: 20px;
+    margin-left: 220px; /* Adjust for sidebar width */
+    min-height: calc(100vh - 80px); /* Ensure it respects the viewport height minus navbar/footer */
+    box-sizing: border-box;
+}
+
+/* Sidebar fixed position adjustment */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%; /* Full height for scrolling */
+    background-color: #102a43;
+    overflow-y: auto; /* Allow sidebar scrolling if content exceeds viewport */
+}

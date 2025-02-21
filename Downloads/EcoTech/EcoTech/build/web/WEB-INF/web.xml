@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <!-- Define the CustomerAuthController servlet -->
+    <servlet>
+        <servlet-name>CustomerAuthController</servlet-name>
+        <servlet-class>com.ecotech.controller.CustomerAuthController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdministratorAuthController</servlet-name>
+        <servlet-class>com.ecotech.controller.AdministratorAuthController</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>AdminController</servlet-name>
+        <servlet-class>com.ecotech.controller.AdminController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.AdminLogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomerLogoutServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.CustomerLogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditUserServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.EditUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.ecotech.controller.DeleteUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangePasswordCustomerServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.ChangePasswordCustomerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminListServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.AdminListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditProfileCustomerServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.EditProfileCustomerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditProfileAdminServlet</servlet-name>
+        <servlet-class>com.ecotech.controller.EditProfileAdminServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <servlet-name>ResourceUsageServlet</servlet-name>
+    <servlet-class>com.ecotech.controller.ResourceUsageServlet</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>AdminAddResourceServlet</servlet-name>
+    <servlet-class>com.ecotech.controller.AdminAddResourceServlet</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>ProjectController</servlet-name>
+    <servlet-class>com.ecotech.controller.ProjectController</servlet-class>
+</servlet>
+
+    
+    
+    <!-- Map the servlet to a URL pattern -->
+    <servlet-mapping>
+        <servlet-name>CustomerAuthController</servlet-name>
+        <url-pattern>/CustomerAuthController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdministratorAuthController</servlet-name>
+        <url-pattern>/admin/AdministratorAuthController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminController</servlet-name>
+        <url-pattern>/admin/AdminController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <url-pattern>/admin/AdminLogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminListServlet</servlet-name>
+        <url-pattern>/admin/AdminListServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditUserServlet</servlet-name>
+        <url-pattern>/admin/EditUserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/admin/UpdateUserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/admin/deleteUser</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerLogoutServlet</servlet-name>
+        <url-pattern>/user/CustomerLogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangePasswordCustomerServlet</servlet-name>
+        <url-pattern>/user/ChangePasswordCustomerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditProfileCustomerServlet</servlet-name>
+        <url-pattern>/user/EditProfileCustomerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditProfileAdminServlet</servlet-name>
+        <url-pattern>/admin/EditProfileAdminServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>ResourceUsageServlet</servlet-name>
+    <url-pattern>/user/ResourceUsageServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>ProjectController</servlet-name>
+    <url-pattern>/user/ProjectController</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>AdminAddResourceServlet</servlet-name>
+    <url-pattern>/admin/AdminAddResourceServlet</url-pattern>
+</servlet-mapping>
+    
+    <!-- Session Configuration -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+        <!-- Timeout in minutes -->
+    </session-config>
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <!-- Default welcome page -->
+    </welcome-file-list>
+    <resource-ref>
+        <res-ref-name>jdbc/etds</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+</web-app>
